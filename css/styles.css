@@ -1,179 +1,201 @@
+body{
+    font-family: "Montserrat";
+    text-align: center;
 
-body {
-  font-family: "Montserrat";
-  text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat-Bold";
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat-Bold";
 }
 
-p {
-  color: #8f8f8f;
+p{
+
+    color:#8f8f8f;
 }
-
-/* Headings */
-
-.big-heading {
-  font-family: "Montserrat-Black";
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-
-.section-heading {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-/* Containers */
-
+/*heading*/
+.big-heading{
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+/*container*/
 .container-fluid{
-  padding: 7% 15%;
+
+    padding: 7% 15% /* top, right, bottom, left */
+    
 }
 
-/* Sections */
-
-.colored-section {
-  background-color: #ff4c68;
-  color: #fff;
+/*sections*/
+.colored-section{
+    background-color: #ff4c68;
+    color: #fff;
+    
+}
+.white-section{
+    background-color: #fff;
 }
 
-.white-section {
-  background-color: #fff;
+/* navigation bar */
+
+.navbar{
+
+    padding: 0 0 4.5rem;
 }
 
-/* Navigation Bar */
+.navbar-brand{
 
-.navbar {
-  padding: 0 0 4.5rem;
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+   
 }
 
-.navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
-  font-weight: bold;
+.nav-item{
+
+    padding: 0px 18px;
+
 }
 
-.nav-item {
-  padding: 0 18px;
+.nav-link{
+
+    font-size: 1.2rem;
+    font-family: "Montserrat-light" ;
 }
 
-.nav-link {
-  font-size: 1.2rem;
-  font-family: "Montserrat-Light";
+/* download buttons */
+
+.download-button{
+
+    margin: 5% 3% 5% 0%; 
 }
 
-/* Buttons */
-
-.download-button {
-  margin: 5% 3% 5% 0;
+#title{
+    height: 80vh;
 }
+/* title-image */
+.title-image {
+    width: 18%;
+    transform: rotate(25deg);
+    position: absolute;
+    float: right;
+    text-align: right;
 
-/* Title Section */
-
-#title {
-  background-color: #ff4c68;
-  color: #fff;
-  text-align: left;
 }
 
 #title .container-fluid {
-  padding: 3% 15% 7%;
-}
+    padding: 3% 15% 7%;
+    text-align: left;
+  }
+  
 
-/* Title Image */
 
-.title-image {
-  width: 60%;
-  transform: rotate(25deg);
-  position: absolute;
-  right: 30%;
-}
 
-/* Features Section */
-
+/* features section */
 #features {
-  position: relative;
+    position: relative; /* to make sure the image is on top of the text */
+    
+  }
+   
+  .feature-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-box {
+    padding: 4.5%;
+   
+  }
+  .icon{    
+    
+    margin-bottom: 1rem;
 }
 
-.feature-title {
-  font-size: 1.5rem;
+.icon:hover{
+
+    color: #ff4c68;
 }
 
-.feature-box {
-  padding: 4.5%;
+/* testimonials section */
+
+#testimonials{
+
+    background-color:#ebad66;
+      
 }
 
-.icon {
-  color: #ef8172;
-  margin-bottom: 1rem;
+.testimonial-text{
+
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.testimonial-image{
+    
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
 }
 
-.icon:hover {
-  color: #ff4c68;
+#press{
+
+    background-color:#ebad66;
+    
+    padding-bottom: 3%;
+
 }
 
-/* Testimonial Section */
+.press-logo{
 
-#testimonials {
-  background-color: #ef8172;
-}
-
-.testimonial-text {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-.testimonial-image {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
+    width: 15%;
+    margin: 20px 20px 30px; /*top left and right then bottom */
 }
 
 
-#press {
-  background-color: #ef8172;
-  padding-bottom: 3%;
+
+#pricing{
+
+    font-family: "Montserrat-Bold";
+    font-weight: 400px;
+    padding: 100px;
+   
+
 }
 
-.press-logo {
-  width: 15%;
-  margin: 20px 20px 50px;
+.price-text{
+     font-size: 3rem;
+     line-height: 1.5;
 }
 
-/* Pricing Section */
-
-#pricing {
-  padding: 100px;
+.pricing-column{
+    padding: 3% 2%;
 }
-
-.price-text {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-.pricing-column {
-  padding: 3% 2%;
-}
-
-/* CTA Section */
-
-
-/* Footer Section */
-
-
-.social-icon {
-  margin: 20px 10px;
-}
-
-@media (max-width: 1028px) {
-
-  #title {
+/*cta section */
+ .footer-buttons{
+    margin: 5% 3% 5% 0%;
+    background-color: #ff4c68;
+    border-style: solid;
+    font-size: larger;
+ }
+/* footer */
+.footer-icon{
+    margin: 7% 3% 5% 0%;
+    font-size: 1.5rem;
     text-align: center;
-  }
-
-  .title-image {
-    position: static;
-    transform: rotate(0);
-  }
+          
 }
+
+@media (max-width:1200px){
+
+    #title{
+        text-align: center;
+        height: auto;
+    }
+    .title-image{
+        width: auto;
+        position: static;
+        transform: rotate(0);
+        float: left;
+    }
+}
+
+
+
+
